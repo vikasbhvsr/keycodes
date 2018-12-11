@@ -8,7 +8,6 @@ let alt = document.querySelector(".alt");
 let keyCodes = document.querySelector(".keyCodes");
 document.querySelector("body").addEventListener("keydown", event => {
   event.preventDefault();
-
   which.innerHTML = `${event.which}`;
   code.innerHTML = `${event.code}`;
   key.innerHTML = `${event.key}`;
