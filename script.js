@@ -1,11 +1,11 @@
-let which = document.querySelector(".which");
-let code = document.querySelector(".code");
-let key = document.querySelector(".key");
-let shift = document.querySelector(".shift");
-let ctrl = document.querySelector(".ctrl");
-let meta = document.querySelector(".meta");
-let alt = document.querySelector(".alt");
-let keyCodes = document.querySelector(".keyCodes");
+const which = document.querySelector(".which");
+const code = document.querySelector(".code");
+const key = document.querySelector(".key");
+const shift = document.querySelector(".shift");
+const ctrl = document.querySelector(".ctrl");
+const meta = document.querySelector(".meta");
+const alt = document.querySelector(".alt");
+const keyCodes = document.querySelector(".keyCodes");
 document.querySelector("body").addEventListener("keydown", event => {
   event.preventDefault();
   which.innerHTML = `${event.which}`;
