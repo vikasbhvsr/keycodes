@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
+}
+
+
+header {
+  display: grid;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: monospace;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.keyCodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1.2rem;
+  justify-items: center;
+  align-items: center;
+  padding: 3rem 0;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.key-box {
+  height: auto;
+  width: 10rem;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  transition: all 0.2s ease-in-out;
+  font-family: monospace;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.key-box:hover {
+  transform: scale(1.05);
+}
+
+.key-title {
+  text-decoration: underline;
+}
+
+.value {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+footer {
+  text-align: center;
+}
+
+.heart {
+  color: maroon;
+}
+
+a {
+  color: maroon;
+  cursor: alias;
+}
+
+a:visited {
+  color: inherit;
+}
+
+
+@media (max-width: 1024px) {
+  .keyCodes {
+    max-width: 800px;
+  }
+}
