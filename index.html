@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="Description"
-      content="JavaScript keyCodes helps you find the event code associated with each key on the keyboard. We all know, they are hard to remember. Bookmark this page and develop happily ever after."
-    />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-120213895-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-120213895-2");
-    </script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="Description" content="JavaScript keyCodes helps you find the event code associated with each key on the keyboard. We all know, they are hard to remember. Bookmark this page and develop happily ever after." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="https://keycodes.netlify.com/favicon.ico" type="image/x-icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120213895-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <title>JavaScript keyCodes</title>
-  </head>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>keyCodes</h1>
-        <p>Press any key</p>
-      </header>
-      <div class="keyCodes">
-        <div class="key-box">
-          <p class="key-title">event.which</p>
-          <h1 class="which value"></h1>
-        </div>
-        <div class="key-box">
-          <p class="key-title">event.code</p>
-          <h1 class="code value"></h1>
-        </div>
-        <div class="key-box">
-          <p class="key-title">event.key</p>
-          <h1 class="key value"></h1>
-        </div>
-        <div class="key-box">
-          <p class="key-title">shiftKey</p>
-          <h1 class="shift value"></h1>
-        </div>
-        <div class="key-box">
-          <p class="key-title">ctrlKey</p>
-          <h1 class="ctrl value"></h1>
-        </div>
-        <div class="key-box">
-          <p class="key-title">altKey</p>
-          <h1 class="alt value"></h1>
-        </div>
-        <div class="key-box">
-          <p class="key-title">metaKey</p>
-          <h1 class="meta value"></h1>
-        </div>
+    gtag("config", "UA-120213895-2");
+  </script>
+
+  <title>JavaScript keyCodes</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>keyCodes</h1>
+      <p>Press any key</p>
+    </header>
+    <div class="keyCodes">
+      <div class="key-box">
+        <p class="key-title">event.which</p>
+        <h1 class="which value"></h1>
       </div>
-      <footer>
-        <p>
-          Made with<span class="heart"> ❤ </span>by
-          <a href="https://github.com/vikasbhvsr" target="_blank" rel="noopener"
-            >Vikas</a
-          >
-        </p>
-      </footer>
+      <div class="key-box">
+        <p class="key-title">event.code</p>
+        <h1 class="code value"></h1>
+      </div>
+      <div class="key-box">
+        <p class="key-title">event.key</p>
+        <h1 class="key value"></h1>
+      </div>
+      <div class="key-box">
+        <p class="key-title">shiftKey</p>
+        <h1 class="shift value"></h1>
+      </div>
+      <div class="key-box">
+        <p class="key-title">ctrlKey</p>
+        <h1 class="ctrl value"></h1>
+      </div>
+      <div class="key-box">
+        <p class="key-title">altKey</p>
+        <h1 class="alt value"></h1>
+      </div>
+      <div class="key-box">
+        <p class="key-title">metaKey</p>
+        <h1 class="meta value"></h1>
+      </div>
     </div>
-    <script async src="script.js"></script>
-  </body>
+    <footer>
+      <p>
+        Made with<span class="heart"> ❤ </span>by
+        <a href="https://github.com/vikasbhvsr" target="_blank" rel="noopener">Vikas</a>
+      </p>
+    </footer>
+  </div>
+  <script async src="script.js"></script>
+</body>
+
 </html>
