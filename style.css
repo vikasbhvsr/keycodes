@@ -23,16 +23,12 @@ header {
 
 .keyCodes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   grid-gap: 1.2rem;
-  justify-items: center;
 }
 
 .key-box {
-  height: auto;
-  min-height: 8rem;
-  width: 10rem;
-  padding: 0.5rem;
+  height: 8rem;
   border-radius: 0.3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: grid;
@@ -83,12 +79,12 @@ a:visited {
 
 @media (max-width: 768px) {
   .wrapper {
-    max-width: 600px;
+    max-width: 690px;
   }
 }
 
 @media (max-width: 425px) {
   .wrapper {
-    max-width: 300px;
+    max-width: 250px;
   }
 }

@@ -10,9 +10,13 @@ document.querySelector("body").addEventListener("keydown", event => {
   event.preventDefault();
   which.innerHTML = `${event.which}`;
   code.innerHTML = `${event.code}`;
-  key.innerHTML = `${event.key}`;
   shift.innerHTML = `${event.shiftKey}`;
   ctrl.innerHTML = `${event.ctrlKey}`;
   alt.innerHTML = `${event.altKey}`;
   meta.innerHTML = `${event.metaKey}`;
+  if (event.which === 32) {
+    return key.innerHTML = `(space)`;
+  } else {
+    return key.innerHTML = `${event.key}`;
+  }
 });
